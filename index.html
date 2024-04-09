@@ -8,16 +8,32 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body> <!-- the body holds the main content of your web page -->
-        <p> <!-- this is a paragraph tag -->
-            Hello World!
-        </p>
+        <!-- this is a paragraph tag -->
         <p class="orange-text fs-36">
             Welcome to Learn 2 Code @ Jade's Place 🤠
         </p>
-        <div class="circle">
-            <p>see u at home !</p>
+        <div>
+            <div id="circle-el" class="circle">
+                <p>see u at home !</p>
+            </div>
+            <div class="button-container">
+                <button class="paleyellow" onclick="changeCircleColor()">paleyellow</button>
+                <button class="aquamarine" onclick="changeCircleColor('aquamarine')">aquamarine</button>
+                <button class="greenyellow" onclick="changeCircleColor('greenyellow')">greenyellow</button>
+            </div>
+            <p>ty for coming to class! anyway, <a href="https://www.instagram.com/homeroom.app/">follow homeroom 🤨</a></p>
+            <img class="animated-img" src="./assets/logo.png" />
         </div>
-        <p>ty for coming to class! anyway, <a href="https://www.instagram.com/homeroom.app/">follow homeroom 🤨</a></p>
-        <img src="./assets/logo.png" />
+        <script>
+            // select the element with the circle class
+            const circle = document.getElementById("circle-el");
+            function changeCircleColor(color) {
+                if (color) {
+                    circle.style.backgroundColor = color;
+                } else {
+                    circle.style.backgroundColor = '#fffec4';
+                }
+            }
+        </script>
     </body>
 </html>
