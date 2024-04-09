@@ -1,0 +1,47 @@
+/* this is how to apply a style to an html element */
+p {
+    color: green;
+}
+
+/* 
+this is how to apply a style using a class 
+declaring a style via a class will override styles applied to all elements in a document
+*/
+.orange-text {
+    color: orange;
+}
+
+.fs-36 {
+    font-size: 36px;
+}
+
+.circle {
+    background-color:#fffec4;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    /* use flex to center elements vertically & horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* a simple border */
+    border: 5px solid violet;
+}
+
+/* you can create styles for elements only within a parent element */
+.circle p {
+    color: violet;
+    font-size: 16px;
+}
+
+a {
+    /* links are inline elements */
+    /* display: block; */
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
